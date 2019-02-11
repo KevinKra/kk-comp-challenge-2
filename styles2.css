@@ -9,18 +9,16 @@ body {
 
 /*=== GLOBAL LAYOUT RULES ===*/
 .document-body {
-	border: 1px solid red;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 200px 1fr;
+	grid-template-columns: 220px 1fr;
 }
 
 .main-doc-aside {
-	border: 2px dashed red;
+	background-color: #455A64;
 }
 
 .main-doc-aside > .side-nav {
-	border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	height: 60%;
@@ -28,7 +26,6 @@ body {
 }
 
 .main-doc {
-	border: 1px solid red;
 	display: grid;
 	width: 100%;
 	grid-template-rows: 50px 1fr;
@@ -36,11 +33,11 @@ body {
 
 .main-content {
 	margin: 0 auto; 
-	border: 1px solid orange;
 	display: grid;
 	grid-template-rows: auto 1fr;
 	padding: 2rem 4%;
 	max-width: 1200px;
+	background-color: #CFD8DC;
 }
 
 
@@ -62,7 +59,7 @@ ul, ol {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 1.6rem 0 .4rem 0;
+	padding: 1.6rem 0 .4rem 0;
 }
 
 .profile-image img {
@@ -72,25 +69,23 @@ ul, ol {
 }
 
 .side-nav-all {
-	border: 2px dashed green;
+	
 }
 
 .side-nav {
-	border: 1px solid blue;
 	height: 20%;
+	margin-left: 5%;
 }
 
 .side-list {
-	border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 }
 
 .side-list li {
-	border: 1px solid red;
-	padding: .2rem 0;
-	margin: .2rem 0;
+	padding: .4rem 0;
+	margin: .3rem 0;
 }
 
 /*=== TOP NAV LAYOUT RULES ===*/
@@ -99,7 +94,6 @@ ul, ol {
 }
 
 .top-nav-interact {
-	border: 1px solid blue;
 	display: flex;
 	width: 100%;
 }
@@ -115,12 +109,10 @@ ul, ol {
 
 /*=== MAIN CONTENT HEADER RULES ===*/
 .main-content-header {
-	border: 1px solid red;
 }
 
 .main-header-top-bar {
 	align-items: center;
-	border: 1px solid blue;
 	display: flex;
 	margin: 2rem 0;
 	justify-content: space-between;
@@ -134,15 +126,12 @@ ul, ol {
 	display: flex;
 	justify-content: space-around;
 	width: 70%;
-	border: 1px solid red;
 }
 
 .main-header-bot-bar {
-	border: 1px solid red;
 }
 
 .header-nav-bar {
-	border: 1px solid red;
 	justify-content: space-evenly;
 	width: 75%;
 	display: flex;
@@ -160,12 +149,9 @@ ul, ol {
 	display: flex;
 	justify-content: space-between;
 	margin: 2rem auto;
-	/*max-width: 1000px;*/
-	border: 1px solid orange;
 }
 
 .graph-container {
-	border: 1px solid red;
 	text-align: center;
 }
 
@@ -174,14 +160,12 @@ ul, ol {
 }
 
 .graph {
-	border: 1px solid black;
 	height: 200px ;
 	width: 450px ;
 	background-color: #ccc;
 }
 
 .divider {
-	border: 1px solid blue;
 	display: flex;
 	margin: 2rem 0;
 }
@@ -197,14 +181,12 @@ hr {
 
 /*=== MAIN SECTION RULES ===*/
 .main-body-core {
-	border: 1px solid green;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row-reverse;
 }
 
 .body-core-table {
-	border: 1px solid red;
 	width: 65%;
 	border-collapse: collapse;
 }
@@ -214,7 +196,6 @@ hr {
 }
 
 .body-core-table td, th {
-	border: 1px solid red;
 	padding: 1.2rem 0;
 	min-width: 150px;
 	margin: 0;
@@ -238,13 +219,11 @@ hr {
 
 /*=== MAIN ASIDE RULES ===*/
 .body-core-aside {
-	border: 1px solid red;
 	width: 30%;
 	max-width: 400px;
 }
 
 .body-aside-btns {
-	border: 1px solid blue;
 	width: 100%;
 }
 
@@ -255,12 +234,10 @@ hr {
 }
 
 .body-aside-forms  form {
-	border-bottom: 2px solid red;
 }
 
 .body-aside-forms > h2 {
 	padding: 0;
-	border: 1px solid red;
 	margin-bottom: 0;
 }
 
@@ -279,11 +256,85 @@ hr {
 	margin-bottom: 0;
 }
 
+@media screen and (max-width: 1220px) {
+	.document-body {
+	}
+
+	.graph-container {
+		margin: 1rem 0;
+	}
+
+	.graph-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
 
 
+@media screen and (max-width: 990px) {
+	.document-body {
+		width: 100vw;
+	}
 
+	.main-header-top-bar {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+		justify-content: center;
+	}
 
+	.header-title-support {
+		margin: 0 auto;
+	}
 
+	.header-form {
+		margin: 1rem 0;
+	}
+
+	.main-header-bot-bar nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-nav-bar {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.header-nav-bar li {
+		border: 1px solid blue;
+		margin: .2rem 0;
+	}
+
+	.main-body-core {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.body-core-table {
+		width: 100%;
+	}
+
+	.body-core-aside {
+		margin: 1rem auto;
+		max-width: 100%;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.document-body {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.main-doc-aside {
+		display: none;
+	}
+}
 
 
 
