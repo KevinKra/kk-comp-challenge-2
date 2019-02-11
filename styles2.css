@@ -1,0 +1,294 @@
+*:before, *:after, * {
+	box-sizing: border-box;
+}
+
+body {
+	border: 0;
+	margin: 0;
+}
+
+/*=== GLOBAL LAYOUT RULES ===*/
+.document-body {
+	border: 1px solid red;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+}
+
+.main-doc-aside {
+	border: 2px dashed red;
+}
+
+.main-doc-aside > .side-nav {
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+	justify-content: space-between;
+}
+
+.main-doc {
+	border: 1px solid red;
+	display: grid;
+	width: 100%;
+	grid-template-rows: 50px 1fr;
+}
+
+.main-content {
+	margin: 0 auto; 
+	border: 1px solid orange;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	padding: 2rem 4%;
+	max-width: 1200px;
+}
+
+
+.inline {
+	display: inline-block;
+	margin: 0;
+}
+
+ul, ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*=== SIDE NAV LAYOUT RULES ===*/
+.profile-image {
+	display: flex;
+	margin: ;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 1.6rem 0 .4rem 0;
+}
+
+.profile-image img {
+	height: 100px;
+	width: 100px;
+	background-color: #ddd;
+}
+
+.side-nav-all {
+	border: 2px dashed green;
+}
+
+.side-nav {
+	border: 1px solid blue;
+	height: 20%;
+}
+
+.side-list {
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.side-list li {
+	border: 1px solid red;
+	padding: .2rem 0;
+	margin: .2rem 0;
+}
+
+/*=== TOP NAV LAYOUT RULES ===*/
+.top-main-nav {
+	
+}
+
+.top-nav-interact {
+	border: 1px solid blue;
+	display: flex;
+	width: 100%;
+}
+
+.top-nav-interact .btn {
+	height: 50px;
+	width: 60px;
+}
+
+.top-search-bar {
+	width: 100%;
+}
+
+/*=== MAIN CONTENT HEADER RULES ===*/
+.main-content-header {
+	border: 1px solid red;
+}
+
+.main-header-top-bar {
+	align-items: center;
+	border: 1px solid blue;
+	display: flex;
+	margin: 2rem 0;
+	justify-content: space-between;
+}
+
+.header-title h1 {
+	margin: 0 0 5px 0;
+}
+
+.header-title-support {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	border: 1px solid red;
+}
+
+.main-header-bot-bar {
+	border: 1px solid red;
+}
+
+.header-nav-bar {
+	border: 1px solid red;
+	justify-content: space-evenly;
+	width: 75%;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.header-nav-bar li {
+	border-bottom: 2px solid blue;
+	padding: 20px 0;
+}
+
+/*=== GRAPH & DIVIDER SECTION RULES ===*/
+.graph-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem auto;
+	/*max-width: 1000px;*/
+	border: 1px solid orange;
+}
+
+.graph-container {
+	border: 1px solid red;
+	text-align: center;
+}
+
+.graph-container button {
+	margin-top: 1.3rem;
+}
+
+.graph {
+	border: 1px solid black;
+	height: 200px ;
+	width: 450px ;
+	background-color: #ccc;
+}
+
+.divider {
+	border: 1px solid blue;
+	display: flex;
+	margin: 2rem 0;
+}
+
+.arrow-divide {
+	margin: 0 10px;
+}
+
+hr {
+	display: inline-block;
+	width: 48%;
+}
+
+/*=== MAIN SECTION RULES ===*/
+.main-body-core {
+	border: 1px solid green;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+.body-core-table {
+	border: 1px solid red;
+	width: 65%;
+	border-collapse: collapse;
+}
+
+.body-core-table thead {
+	background-color: #888;
+}
+
+.body-core-table td, th {
+	border: 1px solid red;
+	padding: 1.2rem 0;
+	min-width: 150px;
+	margin: 0;
+}
+
+.body-core-table td {
+	padding: 1.7rem 1rem 1.7rem .8rem;
+}
+
+.td-special {
+	display: inline-block;
+}
+
+.table-button {
+	display: inline;
+	float: left;
+	padding: 0 0;
+	margin: .7rem 0;
+	min-width: 0;
+}
+
+/*=== MAIN ASIDE RULES ===*/
+.body-core-aside {
+	border: 1px solid red;
+	width: 30%;
+	max-width: 400px;
+}
+
+.body-aside-btns {
+	border: 1px solid blue;
+	width: 100%;
+}
+
+.btn-3 {
+	width: 100%;
+	padding: .7rem 0;
+	margin-bottom: 1rem;
+}
+
+.body-aside-forms  form {
+	border-bottom: 2px solid red;
+}
+
+.body-aside-forms > h2 {
+	padding: 0;
+	border: 1px solid red;
+	margin-bottom: 0;
+}
+
+.copy-link {
+	width: 100%;
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+.input-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.no-b-margin {
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

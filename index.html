@@ -3,21 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles2.css">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 </head>
 <body class=document-body>
 	
 
 <aside class="main-doc-aside">
-	<nav class="side-nav">
+	<nav class="side-nav-all">
 		<section>
-			<article class="profile-image"></article>
-			<p>Newton Barley</p>
+			<article class="profile-image">
+				<img src="">
+				<p>Newton Barley</p>
+			</article>
 		</section>
-		<nav class="side-nav-main">
+		<nav class="side-nav side-nav-main">
 			<h3>Main</h3>
-			<ul class="side-main">
+			<ul class="side-list side-main">
 				<li>Home</li>
 				<li>Jobs</li>
 				<li>Resumes</li>
@@ -25,9 +27,9 @@
 				<li>Calendar</li>
 			</ul>
 		</nav>
-		<nav class="side-nav-admin">
+		<nav class="side-nav side-nav-admin">
 			<h3>Admin</h3>
-			<ul class="side-admin">
+			<ul class="side-list side-admin">
 				<li>Users</li>
 				<li>Locations</li>
 				<li>Workflows</li>
@@ -35,9 +37,9 @@
 				<li>Social</li>
 			</ul>
 		</nav>
-		<nav class="side-nav-categories">
+		<nav class="side-nav side-nav-categories">
 			<h3>Categories</h3>
-			<ul class="side-categories">
+			<ul class="side-list side-categories">
 				<li>Administrative</li>
 				<li>Design</li>
 				<li>Executive</li>
@@ -50,7 +52,7 @@
 	<nav class="top-main-nav">
 		<form action="" class="top-nav-interact">
 			<button class="btn">x</button>
-			<input type="text" class="top-search-bar">
+			<input type="text" placeholder="Search for a task, job, or whatever" class="top-search-bar">
 			<button class="btn">x</button>
 			<button class="btn">y</button>
 			<button class="btn">z</button>
@@ -62,7 +64,7 @@
 				<article class="header-title">
 					<h1>Customer Service Representative</h1>
 					<div class="header-title-support">
-						<p>San Fransisco, CA</p>
+						<p class="inline">San Fransisco, CA</p>
 						<a href="">Preview this post</a>
 					</div>
 				</article>
@@ -74,8 +76,8 @@
 				</form>
 			</section>
 			<section class="main-header-bot-bar">
-				<nav class="header-nav-bar">
-					<ul>
+				<nav>
+					<ul class="header-nav-bar">
 						<li>Summary</li>
 						<li>Applicants</li>
 						<li>Job Board</li>
@@ -90,11 +92,11 @@
 		<section class="main-content-body">
 			<section class="graph-section">
 				<div class="graph-container">
-					<article class="circular-graphs"></article>
+					<article class="circular-graphs graph"></article>
 					<button class="btn-2">Totals Out of 5000 views</button>
 				</div>
 				<div class="graph-container">
-					<article class="bar-graph"></article>
+					<article class="bar-graph graph"></article>
 					<button class="btn-2">Applicants/Day</button>
 				</div>
 			</section>
@@ -103,10 +105,11 @@
 				<button class="arrow-divide">^</button>
 				<hr>
 			</section>
-			<section class="main-body-form">
-				<table>
+			<section class="main-body-core">
+				<table class="body-core-table">
 					<thead>
 						<th>Job Description</th>
+						<th class="table-button"><button>EDIT</button></th>
 					</thead>
 					<tbody>
 						<tr>
@@ -130,8 +133,8 @@
 							<td>Open</td>
 						</tr>
 						<tr>
-							<td>Description</td>
-							<td>Lorem</td>
+							<td class="td-special">Description</td>
+							<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui temporibus, provident voluptatum, hic voluptatem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ipsam excepturi iure id voluptatibus. asperiores quaerat expedita necessitatibus ipsa labore error ullam quisquam neque consectetur totam rem dolorem quis nisi.</td>
 						</tr>
 						<tr>
 							<td>Hiring Lead</td>
@@ -139,30 +142,38 @@
 						</tr>
 						<tr>
 							<td>Approved Salary</td>
-							<td>58,000</td>
+							<td>$58,000</td>
 						</tr>
 					</tbody>
-					<aside class="main-body-aside">
+					<aside class="body-core-aside">
 						<section class="body-aside-btns">
-							<buttons class="btn-3">Post to facebook</buttons>
-							<buttons class="btn-3">Post to facebook</buttons>
-							<buttons class="btn-3">Post to facebook</buttons>
+							<button class="btn-3">Post to facebook</button>
+							<button class="btn-3">Tweet this Job</button>
+							<button class="btn-3">Post to Linkdin</button>
 						</section>
-						<form action="" class="copy-forms">
-							<h2>Link to this Job</h2>
-							<p>Paragaph</p>
-							<input type="text" class="copy-link">
-						</form>
-						<form action="" class="copy-forms">
-							<h2>Link to this Job</h2>
-							<p>Paragaph</p>
-							<input type="text" class="copy-link">
-						</form>
-						<form action="" class="copy-forms">
-							<h2>Link to this Job</h2>
-							<p>Paragaph</p>
-							<input type="text" class="copy-link">
-						</form>
+						<article class="body-aside-forms">
+							<form action="" class="copy-forms">
+								<h2>Link to this Job</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ipsam excepturi iure id voluptatibus.</p>
+								<div class="input-block">
+									<input type="text" placeholder=" http://somewebsite.com" class="copy-link">
+									<input type="submit" value="Copy" class="copy-submit">
+								</div>
+							</form>
+							<form action="" class="copy-forms">
+								<h2>Use the Button Widget</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ipsam excepturi iure id voluptatibus.</p>
+								<div class="input-block">
+									<input type="text" placeholder=" something here as well" class="copy-link">
+									<input type="submit" value="Copy" class="copy-submit">
+								</div>
+							</form>
+							<form action="" class="copy-forms">
+								<h2>Upload Resumes by Email</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ipsam excepturi iure id voluptatibus.</p>
+								<input type="email" placeholder=" yourEmail@email.com" class="copy-link">
+							</form>
+						</article>
 					</aside>
 				</table>
 			</section>
