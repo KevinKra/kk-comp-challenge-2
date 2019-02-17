@@ -3,9 +3,9 @@ ul { list-style-type: none; margin: 0; padding: 0; }
 .document-body { display: flex; }
 .document-body .main-doc-aside { width: 15%; }
 .document-body .main-doc-container { width: 85%; }
-.document-body .main-doc-container .top-nav-interact { display: flex; justify-content: space-between; border: 1px solid red; }
+.document-body .main-doc-container .top-nav-interact { display: flex; justify-content: space-between; border: 1px solid red; height: 3rem; }
 .document-body .main-doc-container .top-nav-interact .top-search-bar { width: 100%; }
-.document-body .main-doc-container .main-doc { display: grid; padding: 1.2rem; border: 1px solid green; background-color: #EDF2F6; grid-template-rows: 5% 1fr; }
+.document-body .main-doc-container .main-doc { display: grid; padding: 2rem; border: 1px solid green; background-color: #EDF2F6; grid-template-rows: 5% 1fr; }
 .document-body .main-doc-container .main-content .main-content-header { display: flex; flex-direction: column; border: 1px solid blue; }
 .document-body .main-doc-container .main-content .main-content-header .header-title { border: 1px solid red; margin: 2rem 0; }
 .document-body .main-doc-container .main-content .main-content-header .header-title h1 { margin: 0; }
@@ -13,17 +13,21 @@ ul { list-style-type: none; margin: 0; padding: 0; }
 .document-body .main-doc-container .main-content .main-content-header .header-title div p { margin: 0; }
 .document-body .main-doc-container .main-content .main-content-header .main-header-top-bar { display: flex; justify-content: space-between; align-items: center; border: 1px solid red; }
 .document-body .main-doc-container .main-content .main-content-header .header-nav-bar { display: flex; justify-content: space-between; width: 80%; border: 1px solid red; }
+.document-body .main-doc-container .main-content .main-content-header .header-nav-bar li { padding: 0 .7rem 1rem 0; }
 .document-body .main-doc-container .main-content .main-content-body .graph-section { display: flex; justify-content: space-between; text-align: center; border: 1px solid red; }
-.document-body .main-doc-container .main-content .main-content-body .graph-section .graph { background-color: #354052; width: 400px; height: 175px; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section .graph { background-color: #354052; width: 400px; height: 175px; margin-top: 3rem; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section button { margin-top: 2rem; }
 .document-body .main-doc-container .main-content .main-content-body .divider { display: flex; justify-content: space-between; margin: 2rem 0; }
 .document-body .main-doc-container .main-content .main-content-body .divider hr { width: 50%; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core { display: flex; justify-content: space-between; }
-.document-body .main-doc-container .main-content .main-content-body .main-body-core .body-core-table { width: 60%; background-color: #fff; border-collapse: collapse; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core .body-core-table { width: 63%; background-color: #fff; border-collapse: collapse; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core thead { background-color: #6D7F96; border-left: 40px solid #6D7F96; border-right: 40px solid #6D7F96; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core th { height: 4rem; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core tr { border-bottom: 1px solid #999; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core .bottom-row { border-bottom: none; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core td { padding: 1.5rem 0; min-width: 145px; }
-.document-body .main-doc-container .main-content .main-content-body .body-core-aside { width: 38%; }
+.document-body .main-doc-container .main-content .main-content-body .body-core-aside { width: 32%; }
+.document-body .main-doc-container .main-content .main-content-body .body-core-aside .body-aside-btns { display: flex; flex-direction: column; }
+.document-body .main-doc-container .main-content .main-content-body .body-core-aside .body-aside-btns button { margin: .5rem; padding: 1rem; }
 
 /*# sourceMappingURL=styles.css.map */

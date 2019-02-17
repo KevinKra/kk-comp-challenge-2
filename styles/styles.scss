@@ -31,13 +31,14 @@ ul {
 		.top-nav-interact {
 			@include flex-row;
 			border: 1px solid red;
+			height: 3rem;
 			.top-search-bar {
 				width: 100%;
 			}
 		}
 	.main-doc {
 		display: grid;
-		padding: 1.2rem;
+		padding: 2rem;
 		border: 1px solid green;
 		background-color: $primaryColor;
 		grid-template-rows: 5% 1fr; 
@@ -46,7 +47,7 @@ ul {
 			.main-content-header {
 				@include flex-column;
 				border: 1px solid blue;
-				
+
 				.header-title {
 					border: 1px solid red;
 					margin: 2rem 0;
@@ -57,21 +58,21 @@ ul {
 						p {margin: 0;}
 					}
 				}
-
 				.main-header-top-bar {
 					@include flex-row;
 					align-items: center;
 					border: 1px solid red;
 				}
-
 				.header-nav-bar {
 					@include flex-row;
 					width: 80%;
 					border: 1px solid red;
+					li {
+						padding: 0 .7rem 1rem 0;
+					}
 				}
 			}
 			.main-content-body {
-
 				.graph-section {
 					@include flex-row;
 					text-align: center;
@@ -80,6 +81,10 @@ ul {
 						background-color: $secondaryColor;
 						width: 400px;
 						height: 175px;
+						margin-top: 3rem;
+					}
+					button {
+						margin-top: 2rem;
 					}
 				}
 				.divider {
@@ -87,12 +92,11 @@ ul {
 					margin: 2rem 0;
 					hr { width: 50%; }
 				}
-
 				.main-body-core {
 					display: flex;
 					justify-content: space-between;
 					.body-core-table {
-						width: 60%;
+						width: 63%;
 						background-color: #fff;
 						border-collapse: collapse;
 						}
@@ -119,7 +123,14 @@ ul {
 						}
 					}
 					.body-core-aside {
-						width: 38%;
+						width: 32%;
+						.body-aside-btns {
+							@include flex-column;
+							button {
+								margin: .5rem;
+								padding: 1rem;
+							}
+						}
 					}
 				}
 			}
