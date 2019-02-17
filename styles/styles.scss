@@ -134,20 +134,13 @@ ul {
 				border-right: none;
 			}
 		}
-	.main-doc {
-		background-color: $primaryColor;
-		display: grid;
-		grid-template-rows: 5% 1fr; 
-		padding: 2rem;
-		}
-		.main-content {
+		.top-header-content {
 			.main-content-header {
 				@include flex-column;
-				border: 1px solid blue;
-
+				padding: 0 2rem;
+				background-color: #fff;
 				.header-title {
-					border: 1px solid red;
-					margin: 2rem 0;
+					margin: 4rem 0;
 					h1 {margin: 0;}
 					div {
 						@include flex-row;
@@ -165,16 +158,24 @@ ul {
 					li {
 						padding: 0 .2rem .5rem .2rem;
 						border-bottom: 2px solid transparent;
-						&:hover {
-							cursor: pointer;
-							border-bottom: 2px solid $buttonActive;
+					&:hover {
+						cursor: pointer;
+						border-bottom: 2px solid $buttonActive;
 						}
-						&:active {
-							border-bottom: 2px solid $facebookColor;
+					&:active {
+						border-bottom: 2px solid $facebookColor;
 						}
 					}
 				}
 			}
+		}
+	.main-doc {
+		background-color: $primaryColor;
+		display: grid;
+		grid-template-rows: 5% 1fr; 
+		padding: 2rem;
+		}
+		.main-content {
 			.main-content-body {
 				.graph-section {
 					@include flex-row;
