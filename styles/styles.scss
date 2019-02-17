@@ -23,12 +23,11 @@ ul {
 .document-body {
 	display: flex;
 	.main-doc-aside {
-		width: 20%;
+		width: 15%;
 	}
-	.main-doc {
-		display: grid;
-		grid-template-rows: 5% 1fr; 
-		width: 80%;
+
+	.main-doc-container {
+		width: 85%;
 		.top-nav-interact {
 			@include flex-row;
 			border: 1px solid red;
@@ -36,14 +35,21 @@ ul {
 				width: 100%;
 			}
 		}
+	.main-doc {
+		display: grid;
+		border: 1px solid green;
+		background-color: $primaryColor;
+		grid-template-rows: 5% 1fr; 
+		}
 		.main-content {
-		
 			.main-content-header {
 				@include flex-column;
 				border: 1px solid blue;
 				
 				.header-title {
 					border: 1px solid red;
+					margin: 2rem 0;
+					h1 {margin: 0;}
 					div {
 						@include flex-row;
 						width: 60%;
@@ -66,3 +72,14 @@ ul {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
