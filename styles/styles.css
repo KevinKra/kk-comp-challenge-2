@@ -1,11 +1,20 @@
 ul { list-style-type: none; margin: 0; padding: 0; }
 
-.document-body { display: flex; }
-.document-body .main-doc-aside { background-color: #354052; color: #6D7F96; width: 15%; }
+.document-body { display: flex; font-family: "Open Sans", sans-serif; }
+.document-body .btn, .document-body .btn-2, .document-body .btn-3 { cursor: pointer; transition: .04s ease-in-out; color: #58677a; border: none; }
+.document-body .btn:hover, .document-body .btn-2:hover, .document-body .btn-3:hover { background-color: #15A9FD; color: #fff; }
+.document-body .btn:active, .document-body .btn-2:active, .document-body .btn-3:active { background-color: #4C6FBD; }
+.document-body .btn:focus, .document-body .btn-2:focus, .document-body .btn-3:focus { outline: none; }
+.document-body .btn-2 { border: 1px solid #58677a; border-radius: 25px; padding: 5px 10px; }
+.document-body .btn-3 { color: #fff; }
+.document-body .btn-3:hover { color: #000; }
+.document-body .btn-3:active { color: #354052; background-color: #60d8ff !important; }
+.document-body .main-doc-aside { background-color: #354052; color: #aaa; width: 15%; }
 .document-body .main-doc-aside .profile-image { display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 1.5rem; }
 .document-body .main-doc-aside .profile-image img { background-color: #bbb; height: 100px; width: 100px; }
 .document-body .main-doc-aside .side-nav { display: flex; flex-direction: column; padding-left: 1rem; }
 .document-body .main-doc-aside .side-nav li { padding: .5rem 0; }
+.document-body .main-doc-aside .side-nav li:hover { cursor: pointer; color: #eee; }
 .document-body .main-doc-container { width: 85%; }
 .document-body .main-doc-container .top-nav-interact { display: flex; justify-content: space-between; border: 1px solid red; height: 3rem; }
 .document-body .main-doc-container .top-nav-interact .top-search-bar { width: 100%; }
@@ -15,17 +24,19 @@ ul { list-style-type: none; margin: 0; padding: 0; }
 .document-body .main-doc-container .main-content .main-content-header .header-title h1 { margin: 0; }
 .document-body .main-doc-container .main-content .main-content-header .header-title div { display: flex; justify-content: space-between; width: 60%; }
 .document-body .main-doc-container .main-content .main-content-header .header-title div p { margin: 0; }
-.document-body .main-doc-container .main-content .main-content-header .main-header-top-bar { display: flex; justify-content: space-between; align-items: center; border: 1px solid red; }
-.document-body .main-doc-container .main-content .main-content-header .header-nav-bar { display: flex; justify-content: space-between; border: 1px solid red; width: 80%; }
-.document-body .main-doc-container .main-content .main-content-header .header-nav-bar li { padding: 0 .7rem 1rem 0; }
-.document-body .main-doc-container .main-content .main-content-body .graph-section { display: flex; justify-content: space-between; border: 1px solid red; text-align: center; }
+.document-body .main-doc-container .main-content .main-content-header .main-header-top-bar { display: flex; justify-content: space-between; align-items: center; }
+.document-body .main-doc-container .main-content .main-content-header .header-nav-bar { display: flex; justify-content: space-between; width: 70%; }
+.document-body .main-doc-container .main-content .main-content-header .header-nav-bar li { padding: 0 .2rem .5rem .2rem; border-bottom: 2px solid transparent; }
+.document-body .main-doc-container .main-content .main-content-header .header-nav-bar li:hover { cursor: pointer; border-bottom: 2px solid #15A9FD; }
+.document-body .main-doc-container .main-content .main-content-header .header-nav-bar li:active { border-bottom: 2px solid #4C6FBD; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section { display: flex; justify-content: space-between; text-align: center; }
 .document-body .main-doc-container .main-content .main-content-body .graph-section .graph { background-color: #354052; height: 175px; margin-top: 3rem; width: 400px; }
 .document-body .main-doc-container .main-content .main-content-body .graph-section button { margin-top: 2rem; }
 .document-body .main-doc-container .main-content .main-content-body .divider { display: flex; justify-content: space-between; margin: 2rem 0; }
 .document-body .main-doc-container .main-content .main-content-body .divider hr { width: 50%; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core { display: flex; justify-content: space-between; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core .body-core-table { background-color: #fff; border-collapse: collapse; width: 63%; }
-.document-body .main-doc-container .main-content .main-content-body .main-body-core thead { background-color: #6D7F96; border-left: 40px solid #6D7F96; border-right: 40px solid #6D7F96; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core thead { background-color: #58677a; border-left: 40px solid #58677a; border-right: 40px solid #58677a; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core th { height: 4rem; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core tr { border-bottom: 1px solid #999; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core .bottom-row { border-bottom: none; }
@@ -39,6 +50,6 @@ ul { list-style-type: none; margin: 0; padding: 0; }
 .document-body .main-doc-container .main-content .main-content-body .body-core-aside .body-aside-forms .input-block { display: flex; }
 .document-body .main-doc-container .main-content .main-content-body .body-core-aside .body-aside-forms .input-block .copy-link { border: 1px solid #999; border-right: none; padding: .7rem; width: 100%; }
 .document-body .main-doc-container .main-content .main-content-body .body-core-aside .body-aside-forms .input-block .copy-submit { background-color: #57BCC2; border-left: none; border-radius: 0 5px 5px 0; border: 1px solid #57BCC2; padding: .7rem; }
-.document-body .main-doc-container .main-content .main-content-body .body-core-aside .body-aside-forms .copy-link-2 { border: 1px solid grey; padding: .7rem 0; width: 100%; }
+.document-body .main-doc-container .main-content .main-content-body .body-core-aside .body-aside-forms .copy-link-2 { border: 1px solid grey; padding: .7rem; width: 95%; }
 
 /*# sourceMappingURL=styles.css.map */
