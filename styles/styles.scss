@@ -44,8 +44,29 @@ ul {
 .document-body {
 	display: flex;
 	.main-doc-aside {
+		background-color: $secondaryColor;
+		color: $supportColor;
 		width: 15%;
+		.profile-image {
+			@include flex-column;
+			align-items: center;
+			justify-content: center;
+			padding-top: 1.5rem;
+			img {
+				background-color: #bbb;
+				height: 100px;
+				width: 100px;
+			}
+		}
+		.side-nav {
+			@include flex-column;
+			padding-left: 1rem;
+			li {
+				padding: .5rem 0;
+			}
+		}
 	}
+
 
 	.main-doc-container {
 		width: 85%;

@@ -1,7 +1,11 @@
 ul { list-style-type: none; margin: 0; padding: 0; }
 
 .document-body { display: flex; }
-.document-body .main-doc-aside { width: 15%; }
+.document-body .main-doc-aside { background-color: #354052; color: #6D7F96; width: 15%; }
+.document-body .main-doc-aside .profile-image { display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 1.5rem; }
+.document-body .main-doc-aside .profile-image img { background-color: #bbb; height: 100px; width: 100px; }
+.document-body .main-doc-aside .side-nav { display: flex; flex-direction: column; padding-left: 1rem; }
+.document-body .main-doc-aside .side-nav li { padding: .5rem 0; }
 .document-body .main-doc-container { width: 85%; }
 .document-body .main-doc-container .top-nav-interact { display: flex; justify-content: space-between; border: 1px solid red; height: 3rem; }
 .document-body .main-doc-container .top-nav-interact .top-search-bar { width: 100%; }
