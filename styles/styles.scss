@@ -36,10 +36,10 @@ $linkedinColor: 	#0382AE;
 
 @mixin btn {
 	.btn {
+		border: none;
+		color: $supportColor;
 		cursor: pointer;
 		transition: .04s ease-in-out;
-		color: $supportColor;
-		border: none;
 		&:hover {
 			background-color: $buttonActive;
 			color: #fff;		
@@ -53,8 +53,8 @@ $linkedinColor: 	#0382AE;
 	}
 	.btn-2 {
 		@extend .btn;
-		border: 1px solid $supportColor;
 		border-radius: 25px;
+		border: 1px solid $supportColor;
 		padding: 5px 10px;
 	}
 	.btn-3 {
@@ -64,8 +64,8 @@ $linkedinColor: 	#0382AE;
 			color: #000;
 		}
 		&:active {
-			color: $secondaryColor;
 			background-color: #60d8ff !important;
+			color: $secondaryColor;
 		}
 	}
 }
@@ -116,11 +116,11 @@ ul {
 			@include flex-row;
 			height: 3rem;
 			.top-search-bar {
-				width: 100%;
-				padding-left: .5rem;
-				border: 1px solid #999;
 				border-left: none;
 				border-right: none;
+				border: 1px solid #999;
+				padding-left: .5rem;
+				width: 100%;
 			}
 			input:focus {
 				outline: none;
@@ -137,8 +137,8 @@ ul {
 		.top-header-content {
 			.main-content-header {
 				@include flex-column;
-				padding: 0 2rem;
 				background-color: #fff;
+				padding: 0 2rem;
 				.header-title {
 					margin: 4rem 0;
 					h1 {margin: 0;}
@@ -156,11 +156,11 @@ ul {
 					@include flex-row;
 					width: 70%;
 					li {
-						padding: 0 .2rem .5rem .2rem;
 						border-bottom: 2px solid transparent;
+						padding: 0 .2rem .5rem .2rem;
 					&:hover {
-						cursor: pointer;
 						border-bottom: 2px solid $buttonActive;
+						cursor: pointer;
 						}
 					&:active {
 						border-bottom: 2px solid $facebookColor;
