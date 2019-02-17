@@ -37,6 +37,7 @@ ul {
 		}
 	.main-doc {
 		display: grid;
+		padding: 1.2rem;
 		border: 1px solid green;
 		background-color: $primaryColor;
 		grid-template-rows: 5% 1fr; 
@@ -69,8 +70,50 @@ ul {
 					border: 1px solid red;
 				}
 			}
+			.main-content-body {
+
+				.graph-section {
+					@include flex-row;
+					text-align: center;
+					border: 1px solid red;
+					.graph {
+						background-color: $secondaryColor;
+						width: 400px;
+						height: 175px;
+					}
+				}
+				.divider {
+					@include flex-row;
+					margin: 2rem 0;
+					hr { width: 50%; }
+				}
+
+				.main-body-core {
+					display: flex;
+					justify-content: space-between;
+					flex-direction: row-reverse;
+					.body-core-table {
+						width: 60%;
+						background-color: #fff;
+						border-collapse: collapse;
+						
+						}
+						thead {
+							background-color: $supportColor;
+						}
+						tr {
+							border-bottom: 1px solid red;
+						}
+						td {
+							padding: 1rem 0;
+						} 
+					}
+					.body-core-aside {
+						width: 38%;
+					}
+				}
+			}
 		}
-	}
 }
 
 
