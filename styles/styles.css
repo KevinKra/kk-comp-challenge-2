@@ -17,11 +17,13 @@ ul { list-style-type: none; margin: 0; padding: 0; }
 .document-body .main-doc-container .main-content .main-content-body .graph-section .graph { background-color: #354052; width: 400px; height: 175px; }
 .document-body .main-doc-container .main-content .main-content-body .divider { display: flex; justify-content: space-between; margin: 2rem 0; }
 .document-body .main-doc-container .main-content .main-content-body .divider hr { width: 50%; }
-.document-body .main-doc-container .main-content .main-content-body .main-body-core { display: flex; justify-content: space-between; flex-direction: row-reverse; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core { display: flex; justify-content: space-between; }
 .document-body .main-doc-container .main-content .main-content-body .main-body-core .body-core-table { width: 60%; background-color: #fff; border-collapse: collapse; }
-.document-body .main-doc-container .main-content .main-content-body .main-body-core thead { background-color: #6D7F96; }
-.document-body .main-doc-container .main-content .main-content-body .main-body-core tr { border-bottom: 1px solid red; }
-.document-body .main-doc-container .main-content .main-content-body .main-body-core td { padding: 1rem 0; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core thead { background-color: #6D7F96; border-left: 40px solid #6D7F96; border-right: 40px solid #6D7F96; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core th { height: 4rem; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core tr { border-bottom: 1px solid #999; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core .bottom-row { border-bottom: none; }
+.document-body .main-doc-container .main-content .main-content-body .main-body-core td { padding: 1.5rem 0; min-width: 145px; }
 .document-body .main-doc-container .main-content .main-content-body .body-core-aside { width: 38%; }
 
 /*# sourceMappingURL=styles.css.map */

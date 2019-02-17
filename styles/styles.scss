@@ -91,22 +91,32 @@ ul {
 				.main-body-core {
 					display: flex;
 					justify-content: space-between;
-					flex-direction: row-reverse;
 					.body-core-table {
 						width: 60%;
 						background-color: #fff;
 						border-collapse: collapse;
-						
 						}
 						thead {
 							background-color: $supportColor;
+							border-left: 40px solid $supportColor;
+							border-right: 40px solid $supportColor;
+						}
+						th {
+							height: 4rem;
+						}
+						tbody {
+						
 						}
 						tr {
-							border-bottom: 1px solid red;
+							border-bottom: 1px solid #999;
+						}
+						.bottom-row {
+							border-bottom: none;
 						}
 						td {
-							padding: 1rem 0;
-						} 
+							padding: 1.5rem 0;
+							min-width: 145px;
+						}
 					}
 					.body-core-aside {
 						width: 38%;
