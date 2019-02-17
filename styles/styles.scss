@@ -2,6 +2,10 @@ $primaryColor: #EDF2F6;
 $secondaryColor: #354052;
 $supportColor: #6D7F96;
 $buttonActive: #15A9FD;
+$btnColorAlt: #57BCC2;
+$facebookColor: #4C6FBD;
+$twitterColor: #0CAEE3;
+$linkedinColor: 	#0382AE;
 
 @mixin flex-row {
 	display: flex;
@@ -11,6 +15,23 @@ $buttonActive: #15A9FD;
 @mixin flex-column {
 	display: flex;
 	flex-direction: column;
+}
+
+@mixin body-input {
+	display: flex;
+	.copy-link {
+		border: 1px solid #999;
+		border-right: none;
+		padding: .7rem;
+		width: 100%;
+	}
+	.copy-submit {
+		background-color: $btnColorAlt;
+		border-left: none;
+		border-radius: 0 5px 5px 0;
+		border: 1px solid $btnColorAlt;
+		padding: .7rem;
+	}
 }
 
 ul {
@@ -37,11 +58,11 @@ ul {
 			}
 		}
 	.main-doc {
-		display: grid;
-		padding: 2rem;
-		border: 1px solid green;
 		background-color: $primaryColor;
+		border: 1px solid green;
+		display: grid;
 		grid-template-rows: 5% 1fr; 
+		padding: 2rem;
 		}
 		.main-content {
 			.main-content-header {
@@ -65,8 +86,8 @@ ul {
 				}
 				.header-nav-bar {
 					@include flex-row;
-					width: 80%;
 					border: 1px solid red;
+					width: 80%;
 					li {
 						padding: 0 .7rem 1rem 0;
 					}
@@ -75,13 +96,13 @@ ul {
 			.main-content-body {
 				.graph-section {
 					@include flex-row;
-					text-align: center;
 					border: 1px solid red;
+					text-align: center;
 					.graph {
 						background-color: $secondaryColor;
-						width: 400px;
 						height: 175px;
 						margin-top: 3rem;
+						width: 400px;
 					}
 					button {
 						margin-top: 2rem;
@@ -96,9 +117,9 @@ ul {
 					display: flex;
 					justify-content: space-between;
 					.body-core-table {
-						width: 63%;
 						background-color: #fff;
 						border-collapse: collapse;
+						width: 63%;
 						}
 						thead {
 							background-color: $supportColor;
@@ -118,18 +139,40 @@ ul {
 							border-bottom: none;
 						}
 						td {
-							padding: 1.5rem 0;
 							min-width: 145px;
+							padding: 1.5rem 0;
 						}
 					}
 					.body-core-aside {
 						width: 32%;
 						.body-aside-btns {
 							@include flex-column;
+							.fb-btn {
+								background-color: $facebookColor;
+								margin-top: 0;
+							}
+							.twitter-btn {
+								background-color: $twitterColor;
+							}
+							.linkedIn-btn {
+								background-color: $linkedinColor;
+								margin-bottom: 0;
+							}
 							button {
-								margin: .5rem;
+								border-radius: 5px;
+								margin: .5rem 0;
 								padding: 1rem;
 							}
+						}
+						.body-aside-forms {
+							.input-block {
+								@include body-input;
+							}
+							.copy-link-2 {
+								border: 1px solid grey;
+								padding: .7rem 0;
+								width: 100%;
+							} 
 						}
 					}
 				}
