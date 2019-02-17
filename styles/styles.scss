@@ -114,15 +114,28 @@ ul {
 		width: 85%;
 		.top-nav-interact {
 			@include flex-row;
-			border: 1px solid red;
 			height: 3rem;
 			.top-search-bar {
 				width: 100%;
+				padding-left: .5rem;
+				border: 1px solid #999;
+				border-left: none;
+				border-right: none;
+			}
+			input:focus {
+				outline: none;
+			}
+			button {
+				border: 1px solid #999;
+				width: 50px;
+			}
+			button:nth-child(even) {
+				border-left: none;
+				border-right: none;
 			}
 		}
 	.main-doc {
 		background-color: $primaryColor;
-		border: 1px solid green;
 		display: grid;
 		grid-template-rows: 5% 1fr; 
 		padding: 2rem;
