@@ -1,0 +1,72 @@
+$primaryColor: #EDF2F6;
+$secondaryColor: #354052;
+$supportColor: #6D7F96;
+$buttonActive: #15A9FD;
+
+@mixin btn {
+	outline: 0;
+	cursor: pointer;
+}
+
+@mixin flex-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.inline {
+	display: inline;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.document-body {
+	display: flex;
+	.main-doc-aside {
+		width: 20%;
+	}
+	.main-doc {
+		display: grid;
+		grid-template-rows: 5% 1fr; 
+		width: 80%;
+		.top-main-nav {
+			border: 1px solid red;
+			display: flex;
+		}
+		.main-content {
+		
+			.main-content-header {
+				@include flex-column;
+				border: 1px solid blue;
+				
+				.header-title {
+					border: 1px solid red;
+					div {
+						@include flex-row;
+					}
+				}
+
+				.main-header-top-bar {
+					@include flex-row;
+					align-items: center;
+					border: 1px solid red;
+				}
+
+				.header-nav-bar {
+					@include flex-row;
+					width: 80%;
+					border: 1px solid red;
+				}
+			}
+		}
+	}
+}

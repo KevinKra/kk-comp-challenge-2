@@ -1,0 +1,51 @@
+.inline {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.document-body {
+  display: flex;
+}
+.document-body .main-doc-aside {
+  width: 20%;
+}
+.document-body .main-doc {
+  display: grid;
+  grid-template-rows: 5% 1fr;
+  width: 80%;
+}
+.document-body .main-doc .top-main-nav {
+  border: 1px solid red;
+  display: flex;
+}
+.document-body .main-doc .main-content .main-content-header {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+.document-body .main-doc .main-content .main-content-header .header-title {
+  border: 1px solid red;
+}
+.document-body .main-doc .main-content .main-content-header .header-title div {
+  display: flex;
+  justify-content: space-between;
+}
+.document-body .main-doc .main-content .main-content-header .main-header-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+.document-body .main-doc .main-content .main-content-header .header-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=styles.css.map */
