@@ -1,7 +1,3 @@
-.inline {
-  display: inline;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -19,9 +15,13 @@ ul {
   grid-template-rows: 5% 1fr;
   width: 80%;
 }
-.document-body .main-doc .top-main-nav {
-  border: 1px solid red;
+.document-body .main-doc .top-nav-interact {
   display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.document-body .main-doc .top-nav-interact .top-search-bar {
+  width: 100%;
 }
 .document-body .main-doc .main-content .main-content-header {
   display: flex;
@@ -34,6 +34,10 @@ ul {
 .document-body .main-doc .main-content .main-content-header .header-title div {
   display: flex;
   justify-content: space-between;
+  width: 60%;
+}
+.document-body .main-doc .main-content .main-content-header .header-title div p {
+  margin: 0;
 }
 .document-body .main-doc .main-content .main-content-header .main-header-top-bar {
   display: flex;

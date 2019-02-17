@@ -3,11 +3,6 @@ $secondaryColor: #354052;
 $supportColor: #6D7F96;
 $buttonActive: #15A9FD;
 
-@mixin btn {
-	outline: 0;
-	cursor: pointer;
-}
-
 @mixin flex-row {
 	display: flex;
 	justify-content: space-between;
@@ -16,10 +11,6 @@ $buttonActive: #15A9FD;
 @mixin flex-column {
 	display: flex;
 	flex-direction: column;
-}
-
-.inline {
-	display: inline;
 }
 
 ul {
@@ -38,9 +29,12 @@ ul {
 		display: grid;
 		grid-template-rows: 5% 1fr; 
 		width: 80%;
-		.top-main-nav {
+		.top-nav-interact {
+			@include flex-row;
 			border: 1px solid red;
-			display: flex;
+			.top-search-bar {
+				width: 100%;
+			}
 		}
 		.main-content {
 		
@@ -52,6 +46,8 @@ ul {
 					border: 1px solid red;
 					div {
 						@include flex-row;
+						width: 60%;
+						p {margin: 0;}
 					}
 				}
 
