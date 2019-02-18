@@ -177,14 +177,36 @@ ul {
 		}
 		.main-content {
 			.main-content-body {
+				.graph-body-1 {
+					border: 1px solid $secondaryColor;
+					text-align: center;
+					min-width: 525px;
+					width: 50%;
+				}
 				.graph-section {
 					@include flex-row;
 					text-align: center;
-					.graph {
-						background-color: $secondaryColor;
-						height: 175px;
-						margin-top: 3rem;
-						width: 400px;
+					border: 1px solid red;
+					margin: 1rem 0;
+					.graph-container {
+						// background-color: $secondaryColor;
+						min-height: 150px;
+						min-width: 150px;
+						border: 10px solid #afb9c9;
+						border-radius: 50%;
+					}
+					.circular-graph {
+						@include flex-column;
+						height: 150px;
+						align-items: center;
+						justify-content: center;
+						align-items: center;
+					}
+					h2 {
+						margin: 0;
+					}
+					p {
+						margin: 0;
 					}
 					button {
 						margin-top: 2rem;

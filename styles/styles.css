@@ -32,8 +32,12 @@ ul { list-style-type: none; margin: 0; padding: 0; }
 .document-body .main-doc-container .top-header-content .main-content-header .header-nav-bar li:hover { border-bottom: 2px solid #15A9FD; cursor: pointer; }
 .document-body .main-doc-container .top-header-content .main-content-header .header-nav-bar li:active { border-bottom: 2px solid #4C6FBD; }
 .document-body .main-doc-container .main-doc { background-color: #EDF2F6; display: grid; grid-template-rows: 5% 1fr; padding: 2rem; }
-.document-body .main-doc-container .main-content .main-content-body .graph-section { display: flex; justify-content: space-between; text-align: center; }
-.document-body .main-doc-container .main-content .main-content-body .graph-section .graph { background-color: #354052; height: 175px; margin-top: 3rem; width: 400px; }
+.document-body .main-doc-container .main-content .main-content-body .graph-body-1 { border: 1px solid #354052; text-align: center; min-width: 525px; width: 50%; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section { display: flex; justify-content: space-between; text-align: center; border: 1px solid red; margin: 1rem 0; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section .graph-container { min-height: 150px; min-width: 150px; border: 10px solid #afb9c9; border-radius: 50%; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section .circular-graph { display: flex; flex-direction: column; height: 150px; align-items: center; justify-content: center; align-items: center; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section h2 { margin: 0; }
+.document-body .main-doc-container .main-content .main-content-body .graph-section p { margin: 0; }
 .document-body .main-doc-container .main-content .main-content-body .graph-section button { margin-top: 2rem; }
 .document-body .main-doc-container .main-content .main-content-body .divider { display: flex; justify-content: space-between; margin: 2rem 0; }
 .document-body .main-doc-container .main-content .main-content-body .divider hr { width: 50%; }
