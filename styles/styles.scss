@@ -177,30 +177,32 @@ ul {
 		}
 		.main-content {
 			.main-content-body {
+				.graphs {
+					display: flex;
+				}
 				.graph-body-1 {
-					border: 1px solid $secondaryColor;
+					min-width: 500px;
 					text-align: center;
-					min-width: 525px;
 					width: 50%;
 				}
 				.graph-section {
 					@include flex-row;
-					text-align: center;
-					border: 1px solid red;
+					justify-content: center;
 					margin: 1rem 0;
+					text-align: center;
 					.graph-container {
-						// background-color: $secondaryColor;
+						border-radius: 50%;
+						border: 10px solid #ced3db;
+						margin: 0 .5rem;
 						min-height: 150px;
 						min-width: 150px;
-						border: 10px solid #afb9c9;
-						border-radius: 50%;
 					}
 					.circular-graph {
 						@include flex-column;
+						align-items: center;
+						align-items: center;
 						height: 150px;
-						align-items: center;
 						justify-content: center;
-						align-items: center;
 					}
 					h2 {
 						margin: 0;
