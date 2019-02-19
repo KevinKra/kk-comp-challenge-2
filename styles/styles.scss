@@ -98,12 +98,18 @@ ul {
 		}
 		.side-nav {
 			@include flex-column;
-			padding-left: 1rem;
+			h3 {
+				padding-left: 1rem;
+				font-size: 12px;
+			}
 			li {
-				padding: .5rem 0;
+				border: 3px solid transparent;
+				padding: .5rem 1rem;
 				&:hover {
 					cursor: pointer;
 					color: #eee;
+					background-color: $supportColor;
+					border-left: 3px solid $buttonActive;
 				}
 			}
 		}
@@ -116,11 +122,14 @@ ul {
 			@include flex-row;
 			height: 3rem;
 			.top-search-bar {
+				border: 1px solid #999;
 				border-left: none;
 				border-right: none;
-				border: 1px solid #999;
 				padding-left: .5rem;
 				width: 100%;
+				&:focus {
+					border: 2px solid $buttonActive;
+				}
 			}
 			input:focus {
 				outline: none;
@@ -174,116 +183,120 @@ ul {
 		display: grid;
 		grid-template-rows: 5% 1fr; 
 		padding: 2rem;
-		}
-		.main-content {
-			.main-content-body {
-				.graphs {
-					display: flex;
+	}
+	.main-content {
+		.main-content-body {
+			.graphs {
+				display: flex;
+			}
+			.graph-body {
+				min-width: 500px;
+				text-align: center;
+				width: 50%;
+			}
+			.graph-section {
+				@include flex-row;
+				justify-content: center;
+				margin: 1rem 0;
+				text-align: center;
+				.graph-container {
+					border-radius: 50%;
+					border: 10px solid #ced3db;
+					margin: 4px .5rem;
+					min-height: 150px;
+					min-width: 150px;
 				}
-				.graph-body-1 {
-					min-width: 500px;
-					text-align: center;
-					width: 50%;
+				.bar-graph-1 {
+					width: auto;
+					height: 175px;
 				}
-				.graph-section {
-					@include flex-row;
+				.circular-graph {
+					@include flex-column;
+					align-items: center;
+					align-items: center;
+					height: 150px;
 					justify-content: center;
-					margin: 1rem 0;
-					text-align: center;
-					.graph-container {
-						border-radius: 50%;
-						border: 10px solid #ced3db;
-						margin: 0 .5rem;
-						min-height: 150px;
-						min-width: 150px;
+				}
+				h2 {
+					margin: 0;
+				}
+				p {
+					margin: 0;
+				}
+				button {
+					margin-top: 2rem;
+				}
+			}
+			.divider {
+				@include flex-row;
+				margin: 2rem 0;
+				hr { width: 50%; }
+			}
+			.main-body-core {
+				display: flex;
+				justify-content: space-between;
+				.body-core-table {
+					background-color: #fff;
+					border-collapse: collapse;
+					width: 63%;
 					}
-					.circular-graph {
+					thead {
+						background-color: $supportColor;
+						border-left: 40px solid $supportColor;
+						border-right: 40px solid $supportColor;
+					}
+					th {
+						height: 4rem;
+					}
+					tbody {
+					
+					}
+					tr {
+						border-bottom: 1px solid #999;
+					}
+					.bottom-row {
+						border-bottom: none;
+					}
+					td {
+						min-width: 145px;
+						padding: 1.5rem 0;
+					}
+				}
+				.body-core-aside {
+					width: 32%;
+					.body-aside-btns {
 						@include flex-column;
-						align-items: center;
-						align-items: center;
-						height: 150px;
-						justify-content: center;
-					}
-					h2 {
-						margin: 0;
-					}
-					p {
-						margin: 0;
-					}
-					button {
-						margin-top: 2rem;
-					}
-				}
-				.divider {
-					@include flex-row;
-					margin: 2rem 0;
-					hr { width: 50%; }
-				}
-				.main-body-core {
-					display: flex;
-					justify-content: space-between;
-					.body-core-table {
-						background-color: #fff;
-						border-collapse: collapse;
-						width: 63%;
+						.fb-btn {
+							background-color: $facebookColor;
+							margin-top: 0;
 						}
-						thead {
-							background-color: $supportColor;
-							border-left: 40px solid $supportColor;
-							border-right: 40px solid $supportColor;
+						.twitter-btn {
+							background-color: $twitterColor;
 						}
-						th {
-							height: 4rem;
+						.linkedIn-btn {
+							background-color: $linkedinColor;
+							margin-bottom: 0;
 						}
-						tbody {
-						
-						}
-						tr {
-							border-bottom: 1px solid #999;
-						}
-						.bottom-row {
-							border-bottom: none;
-						}
-						td {
-							min-width: 145px;
-							padding: 1.5rem 0;
+						button {
+							border-radius: 5px;
+							margin: .5rem 0;
+							padding: 1rem;
 						}
 					}
-					.body-core-aside {
-						width: 32%;
-						.body-aside-btns {
-							@include flex-column;
-							.fb-btn {
-								background-color: $facebookColor;
-								margin-top: 0;
-							}
-							.twitter-btn {
-								background-color: $twitterColor;
-							}
-							.linkedIn-btn {
-								background-color: $linkedinColor;
-								margin-bottom: 0;
-							}
-							button {
-								border-radius: 5px;
-								margin: .5rem 0;
-								padding: 1rem;
-							}
+					.body-aside-forms {
+						.input-block {
+							@include body-input;
 						}
-						.body-aside-forms {
-							.input-block {
-								@include body-input;
-							}
-							.copy-link-2 {
-								border: 1px solid grey;
-								padding: .7rem;
-								width: 95%;
-							} 
-						}
+						.copy-link-2 {
+							border: 1px solid grey;
+							padding: .7rem;
+							width: 95%;
+						} 
 					}
 				}
 			}
 		}
+	}
 }
 
 
