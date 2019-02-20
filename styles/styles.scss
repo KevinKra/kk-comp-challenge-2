@@ -30,6 +30,7 @@ $linkedinColor: 	#0382AE;
 		border-left: none;
 		border-radius: 0 5px 5px 0;
 		border: 1px solid $btnColorAlt;
+		color: #fff;
 		padding: .7rem;
 	}
 }
@@ -98,6 +99,9 @@ ul {
 		}
 		.side-nav {
 			@include flex-column;
+			i {
+				padding-right: 5px;
+			}
 			h3 {
 				padding-left: 1rem;
 				font-size: 12px;
@@ -153,13 +157,19 @@ ul {
 					h1 {margin: 0;}
 					div {
 						@include flex-row;
+						color: #999;
 						width: 60%;
 						p {margin: 0;}
+						a {text-decoration: none;}
 					}
 				}
 				.main-header-top-bar {
 					@include flex-row;
 					align-items: center;
+					button {
+						margin: 0 .2rem;
+						padding: 7px 9px;
+					}
 				}
 				.header-nav-bar {
 					@include flex-row;
@@ -280,6 +290,7 @@ ul {
 						button {
 							border-radius: 5px;
 							margin: .5rem 0;
+							color: #fff;
 							padding: 1rem;
 						}
 					}
